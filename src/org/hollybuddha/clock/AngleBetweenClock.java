@@ -20,21 +20,7 @@ public class AngleBetweenClock {
 		angleindeg = anglebetween();
 	}
 
-	public static void main(String[] args) {
-
-		AngleBetweenClock clk = new AngleBetweenClock(10, 30);
-		System.out.println(clk);
-		
-		clk = new AngleBetweenClock(8, 30);
-		System.out.println(clk);
-		
-		clk = new AngleBetweenClock(4, 20);
-		System.out.println(clk);
-
-		clk = new AngleBetweenClock(2, 20);
-		System.out.println(clk);
-
-	}
+	
 	
 	public double anglebetween(){
 		double val = 0;
