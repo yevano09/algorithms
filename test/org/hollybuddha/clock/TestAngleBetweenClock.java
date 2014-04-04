@@ -1,0 +1,14 @@
+package org.hollybuddha.clock;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class TestAngleBetweenClock {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}
