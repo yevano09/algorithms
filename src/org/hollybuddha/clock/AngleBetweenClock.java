@@ -64,4 +64,8 @@ public class AngleBetweenClock {
 	    angle = Math.min(angle, 360 - angle);
 	    return angle;
 	}
+	
+	public static void main(String[] args) {
+		System.out.println("Hello !!");
+	}
 }
