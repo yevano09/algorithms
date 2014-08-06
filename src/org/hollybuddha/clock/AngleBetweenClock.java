@@ -67,5 +67,6 @@ public class AngleBetweenClock {
 	
 	public static void main(String[] args) {
 		System.out.println("Hello !!");
+		System.out.println(AngleBetweenClock.angle(2, 10));
 	}
 }
