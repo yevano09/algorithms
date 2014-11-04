@@ -24,7 +24,7 @@ public class BinarySearchTree {
 		if (lattestRoot.Value > node.Value) {
 			// node should be in the left side
 
-			if (!Objects.isNull(lattestRoot.left) {
+			if ( lattestRoot.left == null) {
 				// / Root node without left node so insert
 				lattestRoot.left = node;
 				return;
