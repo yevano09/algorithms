@@ -11,10 +11,10 @@ public class StreamExample {
 
 			myList
 			    .stream()
-			    .filter(s -> s.startsWith("c"))
+			    .filter(s -> !s.startsWith("c"))
 			    .map(String::toUpperCase)
 			    .sorted()
-			    .forEach(System.out::println);
+			    .forEach(n -> System.out.print(n + " "));
 
 	}
 
