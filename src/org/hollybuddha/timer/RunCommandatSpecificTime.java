@@ -15,15 +15,15 @@ public class RunCommandatSpecificTime {
 			public void run() {
 				System.out.println("Starting Task");
 				Process p;
-				
-				try ( p = Runtime.getRuntime().exec("Dir") ){
-					
-					
-				} catch (IOException e) {
+				int RetVal;
+				try {
+					p = Runtime.getRuntime().exec("Dir") ;
+					RetVal = p.waitFor();
+				} catch (IOException | InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				p.waitFor();
+				
 				
 				scheduler.schedule(stopTask(), 500, TimeUnit.MILLISECONDS);
 			}
